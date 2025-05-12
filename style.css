@@ -44,10 +44,9 @@ img{
 /* reset code and common code end here */
 
 /* navber start her */
-#menu-icon {
+#menu-icon{
     display: none;
 }
-
 nav{
   
  font-family:fantasy;
@@ -102,6 +101,22 @@ nav{
    font-size: 1rem; 
 }
 /* navber ends here */
+/* -----------header starts here---------- */
+.header{
+    padding: 4rem 0;
+    height: 80vh;
+    background: url(images/banner.jpeg) no-repeat center ;
+    background-attachment:fixed;
+    background-size:cover;
+
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+
+}
+/* header starts here */
 
 /* footer starts here */
 .footer{
@@ -122,29 +137,17 @@ nav{
 
 
 
-
-
-
-
-
-
 /* footer ends here */
 
 @media(max-width: 992px){
 .flex-space-around{ /*by default row  wise*/
-    flex-direction:colum;
+    /* flex-direction:row; */
     gap: 1rem;
     padding: 1rem 0;
 }
 #menu-icon{
-    display: b;
+    display: flex;
     text-align: center;
-    margin: 1rem 0;
-    cursor: pointer;
-
-}
-.hidden{
-    display: none;
 }
 
 }
