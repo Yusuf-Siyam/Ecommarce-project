@@ -1,0 +1,157 @@
+/* reset code and common code start here */
+:root{
+    --primary-color:rgb(92, 200, 15);
+    --secondary-color:rgba(36,122,55,0.9);  /* opacity:0.9*/
+    --padding:0.5rem;
+    --transition: all 0.3s;
+    --border-radious:0.6rem;
+   --box-shadow:0.1rem, 0.2rem 0.8rem rgba(205,202,202,0.5)  /* x,y,blour,rgba */
+    
+}
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration:none;  /*ul er niche je underline thake */
+}
+html{
+    scroll-behavior: smooth;
+
+}
+img{
+    width: 100%;
+    height: auto ;
+}
+.flex-space-around{ /*by default row  wise*/
+     display: flex;
+     justify-content:space-around ; /*space-around*/
+     align-items: center;
+}
+
+ .btn{   /*footer e btn er kj korechi */
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+.btn:hover{
+    color:red;
+}
+
+/* reset code and common code end here */
+
+/* navber start her */
+#menu-icon {
+    display: none;
+}
+
+nav{
+  
+ font-family:fantasy;
+ font-size: 1.2rem;
+ position:sticky;
+ align-items: center;
+ top: 0;
+ left: 0;
+ z-index:100 ;
+}
+.nav-upper{
+    min-height: 10vh;
+    background-color: var(--primary-color);
+     padding: 1rem 0rem; /*top-to-botton-1,right-left-1 */
+       
+}
+.nav__list{
+    transition: var(--transition);
+}
+.nav__list:hover{
+    text-decoration: overline;
+    color: black;
+}
+.nav__link{
+    color: white;
+    transition: var(--transition);
+}
+.nav__link:hover{
+    color: black;
+}
+.profile-icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius:50%;
+    border: white 1px solid;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.profile-icon:hover{
+   
+    filter: saturate(1);
+    
+}
+
+.nav-lower{
+    min-height: 10vh;
+    background-color: var(--secondary-color);
+    font-weight: bolder;
+
+}
+.nav__brand{
+   font-size: 1rem; 
+}
+/* navber ends here */
+
+/* footer starts here */
+.footer{
+    min-height: 10vh;
+    background-color:var(--primary-color);
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+}
+.btn-subscribe{
+  margin-left: -10px;
+}
+.footer__input{
+    border:none;
+    padding: var(--padding);
+    width: 20rem;
+}
+
+
+
+
+
+
+
+
+
+/* footer ends here */
+
+@media(max-width: 992px){
+.flex-space-around{ /*by default row  wise*/
+    flex-direction:colum;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+#menu-icon{
+    display: b;
+    text-align: center;
+    margin: 1rem 0;
+    cursor: pointer;
+
+}
+.hidden{
+    display: none;
+}
+
+}
+
+@media(max-width: 768px){
+
+}
+@media(max-width: 600px){
+
+}
